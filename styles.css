@@ -1,17 +1,59 @@
-* {
-  margin:0px;
-  padding:0px;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
+/* .tictactoe{
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+} */
+.scorecard{
+    display: flex;
+    margin: 40px auto;
+    gap: 40px;
+    justify-content: center;
+}
+.x,.o{
+    display: flex;
+    gap: 30px;
+    padding: 8px 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 4px solid  rgb(2, 152, 189);
+}
+.x span:first-child, .o span:first-child{
+    color:  rgb(2, 152, 189);
+    font-size: 20px;
+    font-weight: 600;
+}
+.game{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+}
+.box{
+    font-size: 3rem;
+    display: grid;
+    place-items: center;
+    height: 100px;
+    background: rgba(27, 7, 7, 0.1);
+}
+.reset{
+    display: grid;
+    place-items: center;
+    margin: 40px auto;
+}
+.reset button{
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    border-radius: 3px;
+    background: rgb(2, 152, 189);
 }
