@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Spoon-Knife</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tictactoe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
-
 <body>
-
-<img src="forkit.gif" id="octocat" alt="" />
-
-<!-- Feel free to change this text here -->
-<p>
-  Fork me? Fork you, @octocat!
-</p>
-
+    <div class="tictactoe">
+        <div class="scorecard">
+            <div class="x">
+                <span>x</span>
+                <span id="x_score">_</span>
+            </div>
+            <div class="o">
+                <span>o</span>
+                <span id="o_score">_</span>
+            </div>
+        </div>
+        <div class="game">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="reset">
+            <div class="wonText"></div>
+            <button id="rstbtn">Reset</button>
+        </div>
+    </div>
 </body>
-</html>
+</html> 
